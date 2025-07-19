@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+    <div id="app">
+       <section id="home-screen" class="screen active">
+       <h1 class="app-title">BrightBrain Challenge-Quiz App</h1>
+    <div class="config">
+        <label>
+            Category:
+            <select id="category">
+                <option value="">Any</option>
+                <option value="10">Computer Science</option>
+                <option value="20">History</option>
+                </select>
+        </label>
+        <label>
+            Difficulty:
+            <select id="difficulty">
+                <option value="">Any</option>
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+        </label>
+        <label >
+            Number of questions:
+            <input type="number" id="number" min="1" max="50" value="10">
+        </label>
+    </div>
+    <button id="start-btn">Start Quiz</button>
+    </section>
+
+    <!-- result eka pennanna -->
+     <section id="result-screen" class="screen">
+        <h2>Results</h2>
+        <p id="score-summary"></p>
+            <div id="history">
+                <h3>Previous Results</h3>
+                <ul id="history-list"></ul>
+                <button id="clear-history">Clear History</button>
+            </div>
+            <button id="restart-btn">Restart</button>
+            <button id="home-btn">Home</button>
+        </section>
+    </div>
+    <script src="app.js" type="module"></script>
+</body>
+</html>
