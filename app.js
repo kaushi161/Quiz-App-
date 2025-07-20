@@ -1,10 +1,8 @@
-// ==== Screen Handling ====
 function showScreen(screenId) {
   document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
   document.getElementById(screenId).classList.add('active');
 }
 
-// ==== Elements ====
 const loginBtn = document.getElementById('login-btn');
 const loginError = document.getElementById('login-error');
 
@@ -29,7 +27,6 @@ let currentQuestion = 0;
 let score = 0;
 let questions = [];
 
-// ==== Dummy Login ====
 const USERNAME = "admin";
 const PASSWORD = "1234";
 
@@ -45,7 +42,6 @@ loginBtn.addEventListener("click", () => {
   }
 });
 
-// ==== Start Quiz ====
 startBtn.addEventListener("click", async () => {
   const category = categoryEl.value;
   const difficulty = difficultyEl.value;
@@ -68,7 +64,6 @@ startBtn.addEventListener("click", async () => {
   }
 });
 
-// ==== Render Question ====
 function renderQuestion() {
   const q = questions[currentQuestion];
   const answers = [...q.incorrect_answers];
@@ -88,7 +83,6 @@ function renderQuestion() {
   });
 }
 
-// ==== Select Option ====
 function selectOption(selectedEl, correctAnswer) {
   const selected = selectedEl.textContent;
   const allOptions = optionsUl.querySelectorAll("li");
@@ -111,7 +105,6 @@ function selectOption(selectedEl, correctAnswer) {
   nextBtn.disabled = false;
 }
 
-// ==== Next Button ====
 nextBtn.addEventListener("click", () => {
   currentQuestion++;
   if (currentQuestion < questions.length) {
@@ -121,7 +114,6 @@ nextBtn.addEventListener("click", () => {
   }
 });
 
-// ==== Show Results ====
 function showResults() {
   showScreen("result-screen");
   scoreSummary.textContent = `You scored ${score} out of ${questions.length}.`;
@@ -170,7 +162,6 @@ logoutBtn.addEventListener("click", () => {
   showScreen("login-screen");
 });
 
-// ==== HTML Decode ====
 function decodeHTML(str) {
   const txt = document.createElement("textarea");
   txt.innerHTML = str;
