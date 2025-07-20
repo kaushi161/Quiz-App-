@@ -1,15 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-
-:root {
-  --bg-color: #f7f9fc;
-  --primary-color: #4a90e2;
-  --secondary-color: #ffffff;
-  --text-color: #333;
-  --accent-color: #ff6f61;
-  --border-radius: 10px;
-  --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
+/* General Reset */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -17,157 +6,159 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(to right, #c374eb, #cd53c0);
-  color: var(--text-color);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  color: #f5f5f5;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 30px;
 }
 
 #app {
   width: 100%;
   max-width: 600px;
-  background-color: var(--secondary-color);
-  border-radius: var(--border-radius);
-  box-shadow: var(--shadow);
-  overflow: hidden;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
 }
 
 .screen {
   display: none;
-  padding: 30px;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .screen.active {
-  display: block;
+  display: flex;
 }
 
-/* Headings */
-h1, h2 {
+.app-title {
+  font-size: 2rem;
+  color: #00f5d4;
   text-align: center;
-  color: var(--primary-color);
   margin-bottom: 20px;
+  text-shadow: 0 0 10px #00f5d4;
 }
 
-h3 {
-  margin-top: 20px;
-}
-
-/* Config Form */
-.config {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  margin-bottom: 20px;
-}
-
+/* Config Area */
 .config label {
-  font-weight: 600;
   display: flex;
   flex-direction: column;
-  color: var(--text-color);
+  margin-bottom: 15px;
 }
 
-select, input[type="number"] {
-  padding: 8px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
+select,
+input[type="number"],
+input[type="text"],
+input[type="password"] {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
   margin-top: 5px;
 }
 
-/* Buttons */
 button {
-  padding: 10px 20px;
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: #00f5d4;
+  color: #000;
   border: none;
-  background-color: var(--primary-color);
-  color: #fff;
-  font-weight: 600;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
   transition: 0.3s ease;
-  display: block;
-  margin: 10px auto;
+  font-weight: bold;
 }
 
 button:hover {
-  background-color: #357ABD;
+  background-color: #05c8a1;
 }
 
-button:disabled {
-  background-color: #aaa;
-  cursor: not-allowed;
-}
-
-.timer {
-  font-weight: bold;
-  color: var(--accent-color);
-}
-
-/* Quiz */
-.top-bar {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
-  font-weight: 600;
-}
-
-#question-text {
-  margin-bottom: 20px;
-  font-size: 1.2rem;
-}
-
-#options {
-  list-style-type: none;
+/* Quiz Options */
+ul#options {
+  list-style: none;
+  padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 10px;
 }
 
-#options li {
-  background-color: #f1f1f1;
-  padding: 12px;
-  border-radius: 5px;
+ul#options li {
+  background-color: #1f1f2e;
+  padding: 12px 15px;
+  border-radius: 10px;
   cursor: pointer;
-  transition: 0.2s ease;
+  transition: 0.3s ease;
   border: 2px solid transparent;
 }
 
-#options li:hover {
-  background-color: #e0e0e0;
+ul#options li:hover {
+  background-color: #33334d;
 }
 
-#options li.selected {
-  border-color: var(--primary-color);
-  background-color: #d0e5ff;
+/* Feedback Styles */
+.correct {
+  background-color: #28a745 !important;
+  color: white;
 }
 
-/* Result */
+.wrong {
+  background-color: #dc3545 !important;
+  color: white;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+/* Results */
 #score-summary {
+  font-size: 18px;
   text-align: center;
-  margin-bottom: 20px;
-  font-size: 1.2rem;
 }
 
 #history-list {
-  list-style-type: disc;
-  padding-left: 20px;
+  list-style: none;
+  padding-left: 0;
   margin-top: 10px;
 }
 
-@media (max-width: 600px) {
-  body {
-    padding: 10px;
-  }
+#history-list li {
+  padding: 6px 10px;
+  border-bottom: 1px solid #666;
+}
 
+/* Top Bar */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Error */
+#error-message,
+#login-error {
+  color: #ff6b6b;
+  font-weight: bold;
+  margin-top: -10px;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
   #app {
-    border-radius: 0;
-    box-shadow: none;
+    padding: 20px;
   }
 
-  .config {
-    gap: 10px;
+  .app-title {
+    font-size: 1.5rem;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px 16px;
   }
 }

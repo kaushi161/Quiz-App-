@@ -1,0 +1,189 @@
+[
+  {
+    "question": "What is the capital of France?",
+    "options": ["Berlin", "Madrid", "Paris", "London"],
+    "answer": "Paris"
+  },
+  {
+    "question": "Which language runs in a web browser?",
+    "options": ["Java", "C", "Python", "JavaScript"],
+    "answer": "JavaScript"
+  },
+
+  {
+    "question": "What does HTML stand for?",
+    "options": ["HyperText Markup Language", "HighText Machine Language", "Hyperlink and Text Markup Language", "Home Tool Markup Language"],
+    "answer": "HyperText Markup Language"
+  },
+  {
+    "question": "What is the correct syntax for referring to an external script called 'xxx.js'?",
+    "options": ["<script href='xxx.js'>", "<script name='xxx.js'>", "<script src='xxx.js'>", "<script file='xxx.js'>"],
+    "answer": "<script src='xxx.js'>"
+  },
+  {
+    "question": "Which language runs in a web browser?",
+    "options": ["Java", "C", "Python", "JavaScript"],
+    "answer": "JavaScript"
+  },
+
+  {
+    "question": "What does CPU stand for?",
+    "options": ["Central Processing Unit", "Computer Personal Unit", "Central Program Unit", "Control Processing Unit"],
+    "answer": "Central Processing Unit"
+  },
+  {
+    "question": "Which language is used for web apps?",
+    "options": ["PHP", "Python", "JavaScript", "All of the above"],
+    "answer": "All of the above"
+  },
+  {
+    "question": "What is the full form of HTTP?",
+    "options": ["HyperText Transfer Protocol", "HyperText Transmission Protocol", "Hyper Terminal Transfer Protocol", "None"],
+    "answer": "HyperText Transfer Protocol"
+  },
+  {
+    "question": "Which of the following is NOT a programming language?",
+    "options": ["Python", "HTML", "Java", "C++"],
+    "answer": "HTML"
+  },
+  {
+    "question": "What does RAM stand for?",
+    "options": ["Read Access Memory", "Random Access Memory", "Rapid Access Module", "Random Applied Memory"],
+    "answer": "Random Access Memory"
+  },
+  {
+    "question": "Which of these is a version control system?",
+    "options": ["Git", "Node", "Visual Studio", "Chrome"],
+    "answer": "Git"
+  },
+  {
+    "question": "Which company developed the Windows OS?",
+    "options": ["Apple", "IBM", "Microsoft", "Google"],
+    "answer": "Microsoft"
+  },
+  {
+    "question": "Which is not an operating system?",
+    "options": ["Linux", "MacOS", "Windows", "Oracle"],
+    "answer": "Oracle"
+  },
+  {
+    "question": "Which device is used to connect to the internet?",
+    "options": ["Router", "Compiler", "Printer", "Monitor"],
+    "answer": "Router"
+  },
+  {
+    "question": "What is the brain of the computer?",
+    "options": ["RAM", "Hard Drive", "CPU", "GPU"],
+    "answer": "CPU"
+  },
+
+
+
+
+  {
+    "question": "Who was the first President of the United States?",
+    "options": ["George Washington", "Abraham Lincoln", "John Adams", "Thomas Jefferson"],
+    "answer": "George Washington"
+  },
+  {
+    "question": "Which war ended in 1945?",
+    "options": ["World War I", "Cold War", "World War II", "Vietnam War"],
+    "answer": "World War II"
+  },
+  {
+    "question": "Who built the pyramids in Egypt?",
+    "options": ["Romans", "Egyptians", "Greeks", "Aztecs"],
+    "answer": "Egyptians"
+  },
+  {
+    "question": "What year did Christopher Columbus discover America?",
+    "options": ["1492", "1500", "1607", "1776"],
+    "answer": "1492"
+  },
+  {
+    "question": "Who was known as the Iron Lady?",
+    "options": ["Angela Merkel", "Indira Gandhi", "Margaret Thatcher", "Golda Meir"],
+    "answer": "Margaret Thatcher"
+  },
+  {
+    "question": "Which empire was ruled by Julius Caesar?",
+    "options": ["Greek Empire", "Roman Empire", "Mongol Empire", "Ottoman Empire"],
+    "answer": "Roman Empire"
+  },
+  {
+    "question": "The Great Wall of China was primarily built to protect against whom?",
+    "options": ["Indians", "Russians", "Mongols", "Japanese"],
+    "answer": "Mongols"
+  },
+  {
+    "question": "Where did the Industrial Revolution begin?",
+    "options": ["France", "Germany", "USA", "United Kingdom"],
+    "answer": "United Kingdom"
+  },
+  {
+    "question": "What year did Sri Lanka gain independence?",
+   "options": ["1945", "1947", "1948", "1950"],
+    "answer": "1948"
+  },
+  {
+    "question": "Who led India’s independence movement with nonviolence?",
+    "options": ["Jawaharlal Nehru", "Sardar Patel", "Mahatma Gandhi", "Bhagat Singh"],
+    "answer": "Mahatma Gandhi"
+  },
+
+
+
+  {
+    "question": "Which is the largest planet in our solar system?",
+    "options": ["Earth", "Mars", "Jupiter", "Saturn"],
+    "answer": "Jupiter"
+  },
+  {
+    "question": "Which country is known as the Land of the Rising Sun?",
+    "options": ["India", "China", "Australia", "Japan"],
+    "answer": "Japan"
+  },
+  {
+    "question": "How many continents are there on Earth?",
+    "options": ["5", "6", "7", "8"],
+    "answer": "7"
+  },
+  {
+    "question": "Which gas do plants absorb from the atmosphere?",
+    "options": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Helium"],
+    "answer": "Carbon Dioxide"
+  },
+  {
+    "question": "What is the capital city of Australia?",
+    "options": ["Sydney", "Melbourne", "Perth", "Canberra"],
+    "answer": "Canberra"
+  },
+  {
+    "question": "Who painted the Mona Lisa?",
+    "options": ["Leonardo da Vinci", "Pablo Picasso", "Vincent van Gogh", "Michelangelo"],
+    "answer": "Leonardo da Vinci"
+  },
+  {
+    "question": "Which animal is known as the King of the Jungle?",
+    "options": ["Tiger", "Elephant", "Lion", "Bear"],
+    "answer": "Lion"
+  },
+  {
+    "question": "What is the chemical symbol for water?",
+    "options": ["O2", "CO2", "H2O", "NaCl"],
+    "answer": "H2O"
+  },
+  {
+    "question": "Which is the longest river in the world?",
+    "options": ["Amazon", "Yangtze", "Nile", "Mississippi"],
+    "answer": "Nile"
+  },
+  {
+    "question": "Which organ pumps blood in the human body?",
+    "options": ["Brain", "Lungs", "Liver", "Heart"],
+    "answer": "Heart"
+  }
+
+
+]
+
